@@ -8,7 +8,7 @@
     let currencies = document.getElementById("currencies");
     let fiatLabel = document.getElementById("fiatLabel");
 
-    fetch('/ticker.json').then(response => {
+    fetch('ticker.json').then(response => {
       response.json().then(json => {
         rates = json;
         let inputEvent = new Event("input");
@@ -85,7 +85,7 @@
       }
 
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js').then(() => {
+        navigator.serviceWorker.register('sw.js').then(() => {
           // SW registered
         }).catch(err => {
           // SW Registration failed
