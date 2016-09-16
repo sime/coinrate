@@ -1,0 +1,15 @@
+{
+  "name": "Coin Rate",
+  "short_name": "coinrate",
+  "lang": "en-US",
+  "start_url": "/coinrate/",
+  "display": "standalone",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/coinrate/coinrate-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
