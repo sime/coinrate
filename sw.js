@@ -1,11 +1,12 @@
 (function () {
   'use strict';
   var CACHE_NAME = 'v1';
+  var pathname = window.location.pathname;
   var urlsToCache = [
-    '/',
-    '/style.css',
-    '/app.js',
-    '/ticker.json',
+    pathname,
+    pathname + 'style.css',
+    pathname + 'app.js',
+    pathname + 'ticker.json',
   ];
 
   self.addEventListener('install', event => {
