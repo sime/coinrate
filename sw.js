@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   var CACHE_NAME = 'v1';
-  var pathname = window.location.pathname;
+  var pathname = '/coinrate/';
   var urlsToCache = [
     pathname,
     pathname + 'style.css',
