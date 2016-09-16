@@ -6,7 +6,6 @@
     let fiat = document.getElementById("fiat");
     let btc = document.getElementById("btc");
     let currencies = document.getElementById("currencies");
-    let fiatLabel = document.getElementById("fiatLabel");
 
     fetch('ticker.json').then(response => {
       response.json().then(json => {
@@ -58,7 +57,6 @@
 
     currencies.addEventListener("change", event => {
       currency = event.target.value;
-      fiatLabel.textContent = currency;
 
       btcToFiat(btc.value);
       localStorage.setItem("lastCurrency", currency);

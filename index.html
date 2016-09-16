@@ -3,42 +3,51 @@
 <head>
   <meta charset="utf-8">
   <title>Coinrate</title>
+  <link rel="stylesheet" href="picnic.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
-  <select id="currencies">
-    <option>AUD</option>
-    <option>BRL</option>
-    <option>CAD</option>
-    <option>CHF</option>
-    <option>CLP</option>
-    <option>CNY</option>
-    <option>DKK</option>
-    <option>EUR</option>
-    <option>GBP</option>
-    <option>HKD</option>
-    <option>ISK</option>
-    <option>JPY</option>
-    <option>KRW</option>
-    <option>NZD</option>
-    <option>PLN</option>
-    <option>RUB</option>
-    <option>SEK</option>
-    <option>SGD</option>
-    <option>THB</option>
-    <option>TWD</option>
-    <option selected>USD</option>
-  </select>
-  <div>
-    <input id="fiat" type="number" />
-    <label id="fiatLabel" for="fiat">USD</label>
+  <h1>Coin Rate</h1>
+  <div class="flex two row fiat-row">
+    <div>
+      <select id="currencies">
+        <option>AUD</option>
+        <option>BRL</option>
+        <option>CAD</option>
+        <option>CHF</option>
+        <option>CLP</option>
+        <option>CNY</option>
+        <option>DKK</option>
+        <option>EUR</option>
+        <option>GBP</option>
+        <option>HKD</option>
+        <option>ISK</option>
+        <option>JPY</option>
+        <option>KRW</option>
+        <option>NZD</option>
+        <option>PLN</option>
+        <option>RUB</option>
+        <option>SEK</option>
+        <option>SGD</option>
+        <option>THB</option>
+        <option>TWD</option>
+        <option selected>USD</option>
+      </select>
+    </div>
+    <div>
+      <input id="fiat" type="number" />
+    </div>
   </div>
 
-  <div>
-    <input id="btc" type="number" />
-    <label for="btc">BTC</label>
+  <div class="flex two row">
+    <div>
+      <label for="btc">BTC</label>
+    </div>
+    <div>
+      <input id="btc" type="number" />
+    </div>
   </div>
 
   <script src="app.js" async></script>
