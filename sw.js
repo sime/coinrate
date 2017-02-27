@@ -1,12 +1,12 @@
 (function () {
   'use strict';
-  var CACHE_NAME = 'v5';
+  var CACHE_NAME = 'v6';
   var pathname = '/coinrate/';
   var urlsToCache = [
     pathname,
     pathname + 'style.css',
     pathname + 'app.js',
-    pathname + 'ticker.json',
+    // pathname + 'ticker.json',
   ];
 
   self.addEventListener('install', event => {
