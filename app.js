@@ -7,7 +7,7 @@
     let btc = document.getElementById("btc");
     let currencies = document.getElementById("currencies");
 
-    fetch('ticker.json').then(response => {
+    fetch('https://blockchain.info/ticker?cors=true').then(response => {
       response.json().then(json => {
         rates = json;
         let inputEvent = new Event("input");

@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  var CACHE_NAME = 'v4';
+  var CACHE_NAME = 'v5';
   var pathname = '/coinrate/';
   var urlsToCache = [
     pathname,
